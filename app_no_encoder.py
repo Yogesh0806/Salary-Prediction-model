@@ -8,7 +8,7 @@ import seaborn as sns
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 # Load model, features, and scaler
-with open("C:/Users/HP/OneDrive/Desktop/salary_model/model_no_encoder.pkl", "rb") as f:
+with open("model_no_encoder.pkl", "rb") as f:
     model, feature_columns, scaler = pickle.load(f)
 
 # --- Streamlit UI ---
@@ -106,7 +106,7 @@ if st.button("🔮 Predict Income", key="predict"):
 import pandas as pd
 
 # Load model
-with open("C:/Users/HP/OneDrive/Desktop/salary_model/model_no_encoder.pkl", "rb") as f:
+with open("model_no_encoder.pkl", "rb") as f:
     model, feature_columns, scaler = pickle.load(f)
 
 # Test data
@@ -141,7 +141,7 @@ import pandas as pd
 import pickle
 
 # Load model
-with open("C:/Users/HP/OneDrive/Desktop/salary_model/model_no_encoder.pkl", "rb") as f:
+with open("model_no_encoder.pkl", "rb") as f:
     model, feature_columns, scaler = pickle.load(f)
 
 # Create a list of test users
